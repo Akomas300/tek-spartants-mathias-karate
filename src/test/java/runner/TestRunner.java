@@ -7,8 +7,8 @@ public class TestRunner {
     Karate runTest(){
         return Karate
                 .run("classpath:features")
-                .karateEnv("dev")
-                .tags("")
+                .karateEnv("qa")
+                //.tags("")
                 .outputCucumberJson(true);
     }
 }
